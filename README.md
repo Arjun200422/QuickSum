@@ -116,17 +116,6 @@ $ npm run dev            # runs on http://localhost:5173
 
 ---
 
-## 🔑  Environment / Configuration
-
-| Key         | Default                 | Description                                            |
-| ----------- | ----------------------- | ------------------------------------------------------ |
-| `PORT`      | 5000                    | Flask port (set via `app.run`)                         |
-| `DB_CONFIG` | see code                | MySQL host/user/pass/db/port                           |
-| CORS origin | `http://localhost:5173` | Change in `add_cors_headers` if your front‑end differs |
-
-Store secrets with an `.env` loader such as *python‑dotenv* (not yet included).
-
----
 
 ## 🎯  Example Requests
 
@@ -157,14 +146,6 @@ curl -F "file=@paper.pdf" \
 ```bash
 curl -F "file=@lecture.mp3" http://localhost:5000/audio_summarize
 ```
-
----
-
-## 🛠  Development Tips
-
-* **GPU support:** Whisper & Long‑T5 auto‑select CUDA if available (`device = "cuda"`).
-* **Suppress line‑ending warnings:** `git config --global core.autocrlf true`.
-* **Pre‑commit:** Consider using *black*, *isort*, and *pre‑commit* hooks for formatting.
 
 ---
 
