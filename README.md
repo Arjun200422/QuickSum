@@ -172,6 +172,3 @@ curl -F "file=@lecture.mp3" http://localhost:5000/audio_summarize
 
 CEG © 2025 Nagarjun M / CEG Anna University
 
----
-
-> *Feel free to open issues or create pull‑requests!*
